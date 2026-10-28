@@ -235,9 +235,24 @@ body::before {
   animation: moon-float 5.5s ease-in-out infinite;
 }
 
+.hero-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(248 222 255 / 24%);
+  border-radius: 30px;
+  box-shadow:
+    0 20px 55px rgb(3 5 18 / 34%),
+    0 0 38px rgb(201 157 235 / 17%);
+  object-fit: cover;
+  animation: moon-float 7s ease-in-out infinite;
+}
+
 .welcome-star,
 .welcome-corner {
   position: absolute;
+  z-index: 2;
   color: #f1d4e5;
 }
 
@@ -1751,6 +1766,10 @@ h1 em {
     width: 80px;
     border-radius: 24px;
     font-size: 3.5rem;
+  }
+
+  .hero-image {
+    border-radius: 22px;
   }
 
   .welcome-copy {

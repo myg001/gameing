@@ -11,10 +11,16 @@ const archetypes = {
       "คุณขับเคลื่อนด้วยความหมายและภาพอนาคต มักมองเห็นทางที่คนอื่นยังนึกไม่ถึง และเติมเสน่ห์ให้สิ่งธรรมดากลายเป็นเรื่องพิเศษ",
     color: "#e7a9d2",
     responses: [
-      "มองหาความหมายที่ซ่อนอยู่ แล้วเลือกทางที่ตรงกับหัวใจ",
-      "จินตนาการถึงความเป็นไปได้ใหม่ ๆ ก่อนตัดสินใจ",
-      "คิดภาพรวมและหาไอเดียที่ทำให้เรื่องนี้มีความหมาย",
-      "ตามสัญชาตญาณ แล้วค่อยสร้างคำตอบในแบบของเรา",
+      "จินตนาการถึงผลลัพธ์ที่อยากเห็น แล้วเลือกก้าวที่พาเข้าใกล้",
+      "มองหาความหมายที่ซ่อนอยู่ก่อนเลือกคำตอบ",
+      "ลองคิดวิธีใหม่ที่ไม่จำเป็นต้องเหมือนใคร",
+      "ถอยมามองภาพรวม แล้วสังเกตโอกาสที่คนอื่นอาจมองข้าม",
+      "ฟังสัญชาตญาณว่าแนวทางไหนตรงกับสิ่งที่คุณให้คุณค่า",
+      "เปลี่ยนสถานการณ์นี้ให้เป็นจุดเริ่มของไอเดียใหม่",
+      "นึกภาพหลายความเป็นไปได้ก่อนตัดสินใจ",
+      "เลือกทางที่เปิดพื้นที่ให้ความคิดสร้างสรรค์เติบโต",
+      "ตามหาเรื่องราวหรือเหตุผลที่ทำให้การเลือกครั้งนี้มีความหมาย",
+      "เริ่มจากภาพฝัน แล้วค่อยหาวิธีทำให้เป็นจริง",
     ],
   },
   adventurer: {
@@ -29,10 +35,16 @@ const archetypes = {
       "คุณมีพลังของการเริ่มต้น ไม่กลัวการเปลี่ยนแผน และเรียนรู้ได้ดีที่สุดเมื่อได้ลงมือจริง ความอยากรู้อยากเห็นทำให้โลกของคุณกว้างขึ้นเสมอ",
     color: "#f2c07c",
     responses: [
-      "ลองเส้นทางที่ไม่คุ้น แล้วเรียนรู้จากสิ่งที่เกิดขึ้น",
-      "เริ่มลงมือก่อน ปรับแผนได้ระหว่างทาง",
-      "มองหาทางเลือกใหม่ที่เปิดประสบการณ์ให้กว้างขึ้น",
-      "เลือกสิ่งที่ให้อิสระและพาเราไปข้างหน้า",
+      "ลองลงมือทำดูก่อน แล้วเรียนรู้จากผลที่เกิดขึ้นจริง",
+      "เลือกเส้นทางที่ไม่คุ้นเพื่อเปิดประสบการณ์ใหม่",
+      "เริ่มจากก้าวเล็ก ๆ แล้วปรับตัวระหว่างทาง",
+      "สำรวจทางเลือกที่ทำให้คุณได้เติบโตและค้นพบสิ่งใหม่",
+      "ยอมลองแม้ยังไม่แน่ใจทั้งหมด แล้วค่อยตัดสินใจต่อ",
+      "เปลี่ยนแผนได้ถ้าพบวิธีที่เหมาะกว่า",
+      "เลือกทำสิ่งที่ท้าทายตัวเองมากกว่ารอให้พร้อม",
+      "ออกไปสัมผัสสถานการณ์จริง แทนการคาดเดาอยู่ไกล ๆ",
+      "ใช้ความผิดพลาดเป็นข้อมูลสำหรับการลองครั้งถัดไป",
+      "เลือกทางที่ยังเหลืออิสระให้คุณเปลี่ยนใจได้",
     ],
   },
   heart: {
@@ -47,10 +59,16 @@ const archetypes = {
       "คุณมองเห็นความรู้สึกเล็ก ๆ ที่คนอื่นอาจมองข้าม ความใส่ใจและความอบอุ่นของคุณช่วยเชื่อมผู้คนให้รู้สึกปลอดภัยและเป็นตัวเองได้",
     color: "#ed9fb5",
     responses: [
-      "ฟังความรู้สึกของทุกคน แล้วหาทางที่อ่อนโยน",
-      "คุยกันตรง ๆ โดยรักษาความสัมพันธ์และความเข้าใจ",
-      "นึกถึงคนที่เกี่ยวข้องและชวนกันหาคำตอบ",
-      "เลือกวิธีที่ช่วยให้ทุกคนรู้สึกปลอดภัยและได้รับการรับฟัง",
+      "รับฟังความรู้สึกของคนที่เกี่ยวข้องก่อนเลือกทาง",
+      "ชวนคุยกันตรง ๆ โดยพยายามเข้าใจมุมของแต่ละคน",
+      "นึกถึงว่าใครได้รับผลกระทบ แล้วถามว่าเขาต้องการอะไร",
+      "หาทางที่อ่อนโยนต่อคนอื่นและไม่ละเลยใจตัวเอง",
+      "อยู่ข้างคนที่ต้องการกำลังใจ แล้วค่อยคิดหาทางออก",
+      "แบ่งปันความกังวลกับคนที่ไว้ใจ แทนการรับมือคนเดียว",
+      "พยายามรักษาความสัมพันธ์โดยไม่ปิดบังความรู้สึกจริง",
+      "สังเกตสิ่งที่อีกฝ่ายไม่ได้พูด แล้วถามด้วยความใส่ใจ",
+      "ชวนทุกคนร่วมตัดสินใจเพื่อให้รู้สึกเป็นส่วนหนึ่ง",
+      "ตั้งขอบเขตอย่างสุภาพ พร้อมอธิบายความรู้สึกของตัวเอง",
     ],
   },
   thinker: {
@@ -65,10 +83,16 @@ const archetypes = {
       "คุณชอบทำความเข้าใจสิ่งต่าง ๆ ให้ชัดก่อนลงมือ เก่งในการมองภาพรวม จัดลำดับ และสร้างความมั่นคงให้กับสิ่งที่คนอื่นกำลังทำ",
     color: "#a9b5ed",
     responses: [
-      "รวบรวมข้อมูลแล้ววางขั้นตอนที่ทำได้จริง",
-      "แยกปัญหาเป็นส่วน ๆ ก่อนเลือกทางที่เหมาะสม",
-      "ประเมินผลลัพธ์และเตรียมแผนสำรองไว้",
-      "หาความชัดเจน แล้วค่อยตัดสินใจอย่างรอบคอบ",
+      "รวบรวมข้อมูลสำคัญก่อนตัดสินใจ",
+      "แบ่งเรื่องนี้เป็นขั้นตอนเล็ก ๆ ที่เริ่มทำได้",
+      "เปรียบเทียบข้อดีข้อเสียของแต่ละทางเลือก",
+      "วางแผนสำรองเผื่อผลลัพธ์ไม่เป็นไปตามคาด",
+      "หาสาเหตุของปัญหาก่อนรีบแก้ที่ปลายเหตุ",
+      "กำหนดสิ่งที่สำคัญที่สุด แล้วจัดลำดับลงมือทำ",
+      "ตรวจสอบข้อเท็จจริงให้ชัดก่อนสรุป",
+      "คาดการณ์ผลระยะยาวและเลือกทางที่ยั่งยืน",
+      "ขอเวลาคิดและวางแผนให้รอบด้านก่อนตอบ",
+      "ตั้งเกณฑ์ตัดสินใจให้ชัด แล้วทำตามอย่างเป็นระบบ",
     ],
   },
 };
@@ -466,6 +490,38 @@ const stages = [
 
 const typeOrder = ["dreamer", "adventurer", "heart", "thinker"];
 const questionCountPerStage = 10;
+const blendedAnswers = [
+  {
+    types: ["dreamer", "adventurer"],
+    icon: "✧",
+    text: "ลองสร้างภาพคร่าว ๆ แล้วออกไปทดลองจริง",
+  },
+  {
+    types: ["dreamer", "heart"],
+    icon: "♡",
+    text: "เลือกทางที่มีความหมายและใส่ใจความรู้สึกของคนสำคัญ",
+  },
+  {
+    types: ["dreamer", "thinker"],
+    icon: "◇",
+    text: "นึกถึงภาพปลายทาง แล้ววางก้าวแรกให้ชัด",
+  },
+  {
+    types: ["adventurer", "heart"],
+    icon: "☼",
+    text: "ชวนคนที่ไว้ใจไปลองด้วยกัน แล้วค่อยปรับระหว่างทาง",
+  },
+  {
+    types: ["adventurer", "thinker"],
+    icon: "⌖",
+    text: "ทดลองทีละทาง พร้อมเตรียมแผนสำรองไว้",
+  },
+  {
+    types: ["heart", "thinker"],
+    icon: "✦",
+    text: "รับฟังทุกฝ่าย แล้วช่วยกันหาข้อตกลงที่ทำได้จริง",
+  },
+];
 const welcomeScreen = document.querySelector("#welcome-screen");
 const stageScreen = document.querySelector("#stage-screen");
 const questionScreen = document.querySelector("#question-screen");
@@ -493,6 +549,7 @@ let memoryTimeout = null;
 let gameInterval = null;
 let timingStreak = 0;
 let timingStartedAt = 0;
+let minigameCompleted = false;
 let answerTimeout = null;
 let activeStage = false;
 let lastQuestionSet = "";
@@ -601,39 +658,52 @@ function renderQuestion() {
     `${stage.name} · คำถาม ${step}`;
   document.querySelector("#question-title").textContent = question;
 
-  const shuffledTypes = shuffle(typeOrder);
+  const options = stage.options.map(([icon, , type]) => ({
+    icon,
+    text: archetypes[type].responses[questionIndex],
+    scores: { [type]: 1 },
+  }));
+  const blendStart = (stageIndex * 3 + questionIndex) % blendedAnswers.length;
+  for (let offset = 0; offset < 2; offset += 1) {
+    const blend = blendedAnswers[(blendStart + offset) % blendedAnswers.length];
+    options.push({
+      icon: blend.icon,
+      text: blend.text,
+      scores: Object.fromEntries(blend.types.map((type) => [type, 0.5])),
+    });
+  }
+  const shuffledOptions = shuffle(options);
   answerList.replaceChildren();
-  shuffledTypes.forEach((type, index) => {
-    const [icon, text] = stage.options.find((option) => option[2] === type);
+  shuffledOptions.forEach((option, index) => {
     const button = document.createElement("button");
     button.className = "answer-option";
     button.type = "button";
     button.style.animationDelay = `${index * 45}ms`;
-    button.setAttribute("aria-label", text);
+    button.setAttribute("aria-label", option.text);
     const iconElement = document.createElement("span");
     iconElement.className = "answer-icon";
     iconElement.setAttribute("aria-hidden", "true");
-    iconElement.textContent = icon;
+    iconElement.textContent = option.icon;
     const textElement = document.createElement("span");
     textElement.className = "answer-copy";
-    textElement.textContent = text;
+    textElement.textContent = option.text;
     const arrow = document.createElement("span");
     arrow.className = "answer-arrow";
     arrow.setAttribute("aria-hidden", "true");
     arrow.textContent = "›";
     button.append(iconElement, textElement, arrow);
-    button.addEventListener("click", () => selectAnswer(type, button));
+    button.addEventListener("click", () => selectAnswer(option.scores, button));
     answerList.append(button);
   });
   showScreen("question");
 }
 
-function selectAnswer(type, selectedButton) {
+function selectAnswer(scores, selectedButton) {
   if (gameLock) {
     return;
   }
   gameLock = true;
-  currentAnswers[questionIndex] = { type, question: roundQuestions[questionIndex] };
+  currentAnswers[questionIndex] = { scores, question: roundQuestions[questionIndex] };
   selectedButton.classList.add("is-selected");
   for (const button of answerList.querySelectorAll("button")) {
     button.disabled = true;
@@ -664,6 +734,7 @@ function showMinigame() {
   clearInterval(gameInterval);
   gameInterval = null;
   timingStreak = 0;
+  minigameCompleted = false;
   const stage = stages[stageIndex];
   const game = stage.mini;
   miniSequenceInput = [];
@@ -908,6 +979,7 @@ function renderTimingGame(content) {
   label.className = "sequence-progress";
   label.textContent = "แตะหยุดเมื่อแสงอยู่ในเขตสีทอง";
   const hit = makeGameButton("หยุดจังหวะ", "primary-button timing-button", () => {
+    if (gameLock || minigameCompleted) return;
     const phase = ((performance.now() - timingStartedAt) / 1600) % 2;
     const position = phase <= 1 ? phase * 100 : (2 - phase) * 100;
     if (position >= 40 && position <= 60) {
@@ -1003,9 +1075,14 @@ function renderChoiceGame(game, content) {
 }
 
 function completeMinigame(success, message) {
+  if (minigameCompleted) return;
+  minigameCompleted = true;
   clearTimeout(memoryTimeout);
   clearInterval(gameInterval);
   gameInterval = null;
+  document.querySelectorAll("#minigame-content button").forEach((button) => {
+    button.disabled = true;
+  });
   if (success) {
     minigamesWon += 1;
   }
@@ -1022,7 +1099,10 @@ function finishStage() {
   const stage = stages[stageIndex];
   const scores = Object.fromEntries(typeOrder.map((type) => [type, 0]));
   currentAnswers.forEach((answer) => {
-    if (answer) scores[answer.type] += 1;
+    if (!answer) return;
+    for (const type of typeOrder) {
+      scores[type] += answer.scores[type] ?? 0;
+    }
   });
   const strongestType = typeOrder.reduce((best, type) =>
     scores[type] > scores[best] ? type : best, typeOrder[0]);
