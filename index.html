@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#100d1c" />
+    <meta
+      name="description"
+      content="ออกเดินทางในโลกแฟนตาซี 10 ด่าน สำรวจนิสัยและค้นพบพลังในตัวคุณ"
+    />
+    <title>บันทึกนักเดินทางแห่งดวงดาว — The Starlit Path</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="sky-glow sky-glow-one" aria-hidden="true"></div>
+    <div class="sky-glow sky-glow-two" aria-hidden="true"></div>
+    <div class="constellation" aria-hidden="true"></div>
+
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="The Starlit Path">
+          <span class="brand-symbol" aria-hidden="true">✦</span>
+          <span>THE <strong>STARLIT PATH</strong></span>
+        </a>
+        <span class="topbar-caption"><span class="tiny-star">✧</span> A JOURNEY WITHIN</span>
+      </header>
+
+      <section class="game-panel" aria-live="polite">
+        <section class="welcome-screen" id="welcome-screen">
+          <div class="welcome-art" aria-hidden="true">
+            <div class="moon-halo"></div>
+            <div class="moon">☾</div>
+            <span class="welcome-star star-a">✦</span>
+            <span class="welcome-star star-b">✧</span>
+            <span class="welcome-star star-c">·</span>
+            <span class="floating-orb orb-a"></span>
+            <span class="floating-orb orb-b"></span>
+          </div>
+          <div class="welcome-copy">
+            <p class="eyebrow">A FANTASY PERSONALITY QUEST</p>
+            <h1>บันทึกนักเดินทาง<br /><em>แห่งดวงดาว</em></h1>
+            <p class="welcome-description">
+              ออกเดินทางผ่าน 10 ดินแดน พบตัวละครระหว่างทาง<br />
+              และค้นพบพลังที่ซ่อนอยู่ในตัวคุณ
+            </p>
+            <div class="quest-facts">
+              <span><b>10</b> ด่าน</span>
+              <i></i>
+              <span><b>100</b> คำถาม</span>
+              <i></i>
+              <span><b>10</b> มินิเกม</span>
+            </div>
+            <button class="primary-button" id="start-button" type="button">
+              <span>เริ่มการเดินทาง</span><span class="button-icon" aria-hidden="true">➜</span>
+            </button>
+            <p class="welcome-note">คำตอบทุกข้อเป็นเรื่องของคุณ · ไม่มีถูกหรือผิด</p>
+          </div>
+          <span class="welcome-corner corner-one" aria-hidden="true">✧</span>
+          <span class="welcome-corner corner-two" aria-hidden="true">✦</span>
+        </section>
+
+        <section class="stage-screen" id="stage-screen" hidden>
+          <div class="stage-topline">
+            <span class="chapter-label">THE JOURNEY</span>
+            <span class="stage-count" id="stage-count"></span>
+          </div>
+          <div class="stage-progress" id="stage-progress" aria-label="ความคืบหน้าการเดินทาง"></div>
+
+          <div class="stage-hero">
+            <div class="realm-art" id="realm-art" aria-hidden="true">
+              <span class="realm-symbol" id="realm-symbol"></span>
+              <span class="realm-orbit realm-orbit-one"></span>
+              <span class="realm-orbit realm-orbit-two"></span>
+              <span class="realm-spark realm-spark-one">✦</span>
+              <span class="realm-spark realm-spark-two">✧</span>
+            </div>
+            <p class="realm-overline" id="realm-overline"></p>
+            <h2 id="realm-title"></h2>
+            <p class="realm-subtitle" id="realm-subtitle"></p>
+          </div>
+
+          <div class="character-dialogue">
+            <div class="character-avatar" id="character-avatar" aria-hidden="true"></div>
+            <div class="dialogue-copy">
+              <div class="character-name" id="character-name"></div>
+              <p id="character-dialogue"></p>
+            </div>
+          </div>
+
+          <div class="stage-bottom">
+            <p id="stage-mission"></p>
+            <button class="primary-button" id="enter-stage-button" type="button">
+              <span>เข้าสู่ด่าน</span><span class="button-icon" aria-hidden="true">➜</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="question-screen" id="question-screen" hidden>
+          <div class="game-topline">
+            <button class="text-button" id="quit-button" type="button">
+              <span aria-hidden="true">←</span> แผนที่
+            </button>
+            <span class="current-realm" id="current-realm"></span>
+            <span class="question-count" id="question-count"></span>
+          </div>
+
+          <div class="question-progress" role="progressbar" aria-label="ความคืบหน้าด่าน">
+            <span id="question-progress-fill"></span>
+          </div>
+
+          <div class="guide-line">
+            <span class="guide-face" id="guide-face" aria-hidden="true"></span>
+            <p><strong id="guide-name"></strong><span id="guide-quote"></span></p>
+          </div>
+
+          <div class="question-heading">
+            <p class="question-kicker" id="question-kicker"></p>
+            <h2 id="question-title"></h2>
+            <p class="question-hint">เลือกเส้นทางที่ใกล้กับตัวคุณที่สุด</p>
+          </div>
+
+          <div class="answer-list" id="answer-list"></div>
+          <p class="answer-footnote"><span aria-hidden="true">✧</span> ไม่มีคำตอบผิด · เลือกจากความรู้สึกแรกได้เลย</p>
+        </section>
+
+        <section class="minigame-screen" id="minigame-screen" hidden>
+          <div class="game-topline">
+            <button class="text-button" id="return-stage-button" type="button">
+              <span aria-hidden="true">←</span> กลับไปคุย
+            </button>
+            <span class="current-realm" id="minigame-realm"></span>
+            <span class="trial-label">MINI TRIAL</span>
+          </div>
+          <div class="minigame-progress" id="minigame-progress"></div>
+          <div class="minigame-heading">
+            <span class="trial-kicker"><span aria-hidden="true">✧</span> บททดสอบประจำด่าน</span>
+            <h2 id="minigame-title"></h2>
+            <p id="minigame-instructions"></p>
+          </div>
+          <div class="minigame-character">
+            <span class="mini-avatar" id="mini-avatar" aria-hidden="true"></span>
+            <p id="minigame-dialogue"></p>
+          </div>
+          <div class="minigame-content" id="minigame-content"></div>
+          <p class="minigame-feedback" id="minigame-feedback" aria-live="polite"></p>
+          <button class="primary-button mini-action" id="minigame-action" type="button" hidden></button>
+        </section>
+
+        <section class="result-screen" id="result-screen" hidden>
+          <div class="result-topline">
+            <span class="result-seal"><span aria-hidden="true">✦</span> THE END OF YOUR JOURNEY</span>
+            <span class="result-total" id="result-total"></span>
+          </div>
+
+          <div class="result-hero">
+            <div class="rank-medallion" id="rank-medallion">
+              <span class="rank-star" aria-hidden="true">✦</span>
+              <span class="rank-letter" id="rank-letter"></span>
+            </div>
+            <p class="result-kicker">ระดับนักเดินทางของคุณ</p>
+            <h2 id="result-title"></h2>
+            <p class="result-tagline" id="result-tagline"></p>
+            <span class="archetype-badge" id="archetype-badge"></span>
+          </div>
+
+          <div class="result-grid">
+            <article class="result-card personality-card">
+              <div class="card-heading"><span>✧</span> พลังนิสัยของคุณ</div>
+              <p id="result-description"></p>
+              <div class="profile-facts">
+                <div><span>ชอบทำ</span><strong id="activity-text"></strong></div>
+                <div><span>จุดแข็ง</span><strong id="strength-text"></strong></div>
+                <div><span>จุดที่ควรระวัง</span><strong id="weakness-text"></strong></div>
+                <div><span>ได้เรียนรู้ว่า</span><strong id="lesson-text"></strong></div>
+              </div>
+            </article>
+
+            <article class="result-card stat-card">
+              <div class="card-heading"><span>✦</span> แผนที่พลังของคุณ</div>
+              <p class="card-subtitle">ทุกพลังเป็นส่วนหนึ่งของตัวคุณ</p>
+              <div class="trait-list" id="trait-list"></div>
+              <div class="mini-score">
+                <span>มินิเกมที่ผ่าน</span>
+                <strong id="mini-score"></strong>
+              </div>
+            </article>
+          </div>
+
+          <section class="journal-section">
+            <div class="journal-heading">
+              <div>
+                <p class="journal-overline">YOUR TRAVEL JOURNAL</p>
+                <h3>สิ่งที่คุณค้นพบระหว่างทาง</h3>
+              </div>
+              <span id="journal-count"></span>
+            </div>
+            <div class="journal-grid" id="journal-grid"></div>
+          </section>
+
+          <div class="closing-note">
+            <span aria-hidden="true">☾</span>
+            <p>นี่เป็นเพียงกระจกบานเล็ก ๆ — คุณมีเรื่องราวอีกมากที่รอให้ค้นพบ</p>
+          </div>
+          <button class="primary-button restart-button" id="restart-button" type="button">
+            <span>เริ่มการเดินทางครั้งใหม่</span><span class="button-icon" aria-hidden="true">↻</span>
+          </button>
+        </section>
+      </section>
+
+      <footer class="site-footer">
+        <span>THE STARLIT PATH</span>
+        <span>เดินทางกลับสู่ตัวเอง <b aria-hidden="true">✧</b></span>
+      </footer>
+    </main>
+  </body>
+</html>
